@@ -14,13 +14,114 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1C1C1C;
     --foreground: #ededed;
   }
 }
-
+.gradient-border {
+  border: 1.31px solid transparent;
+  background: 
+    linear-gradient(#282828, #282828) padding-box,
+    linear-gradient(239.29deg, #3D3D3D 9.45%, rgba(160, 160, 160, 0.04) 66.55%) border-box;
+  border-radius: 15.7px;
+}
+.bg-img{
+  background-image: url('/Images/Angular gradient 1st version.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ .bg-img-oursupport{
+  background-image: url('../../public/Images/oursupport/Frame 1707479370.svg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: max-content;
+  width: 100% ;
+}
+.bg-img-dashboard{
+  background-image: url('../../public/Images/dashboard/Frame\ 1000000957.svg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: max-content;
+  width: 100% ;
+}
+.bg-percent-img{
+  background-image: url('../../public/Images/percentage/Frame 1707479341.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+width: 100%;
+height: 240px;
+}
+.bg-footer{
+  background-image: url('/Images/Frame 6083.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* Add to your global CSS */
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* Add this to your global CSS file */
+a:focus, button:focus, .focus\:ring-2:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  --tw-ring-shadow: none !important;
+  --tw-ring-offset-shadow: none !important;
+}
+
+/* 900 */
+/* @font-face {
+  font-family: "alexandriaextrabold";
+  src: url(../app/fonts/Alexandria-ExtraBold.ttf) format("truetype");
+} */
+/* 800 */
+/* @font-face {
+  font-family: "alexandriaextralight";
+  src: url(../app/fonts/Alexandria-ExtraLight.ttf) format("truetype");
+} */
+/* 700 */
+@font-face {
+  font-family: "dm-bold";
+  src: url(../../public/fonts/DMSans-Bold.ttf) format("truetype");
+}
+/* 600 */
+@font-face {
+  font-family: "dm-semibold";
+  src: url(../../public/fonts/DMSans_36pt-SemiBold.ttf) format("truetype");
+}
+/* 500 */
+@font-face {
+  font-family: "dm-medium";
+  src: url(../../public/fonts/DMSans-Medium.ttf) format("truetype");
+}
+/* 400 */
+@font-face {
+  font-family: "dm";
+  src: url(../../public/fonts/DMSans-Regular.ttf) format("truetype");
+}
+/* 300 */
+/* @font-face {
+  font-family: "alexandriathin";
+  src: url(../app/fonts/Alexandria-Thin.ttf) format("truetype"); */
+/* } */
+
+@media (min-width:1332px ) and (max-width:1336px) {
+  .bg-percent-img{
+    height: 212px !important;
+  }
+}
+
+@media (min-width:1232px ) and (max-width:1236px) {
+  .bg-percent-img{
+    height: 212px !important;
+  }
 }
